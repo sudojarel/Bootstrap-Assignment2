@@ -12,9 +12,9 @@
 .viewProd {
 	padding: 16px;
     margin-bottom: 16px;
-	box-shadow: 0 0 5px #D3D3D3 !important;
+	box-shadow: 0 0 5px #D3D3D3
 }
 
 .viewProd p{
-	font-size:13px;
+	font-size:17px;
 }
