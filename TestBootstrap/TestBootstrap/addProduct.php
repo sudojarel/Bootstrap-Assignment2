@@ -245,14 +245,14 @@ $(document).ready(function(){
    
   else  
   {  
-  var formData = new FormData($(this)[0]);
    $.ajax({  
     url:"insert.php",  
     method:"POST",  
-    data:formData,  
-	contentType: false,
-	cache: false,
-	processData:false,
+    enctype: 'multipart/form-data',
+    data: new FormData(this),
+    contentType: false,
+    cache: false,
+    processData:false,
     beforeSend:function(){  
      $('#insert').val("Inserting");  
     },  
